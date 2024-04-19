@@ -16,6 +16,21 @@ public class Results
 
  public string Sunrise {get;set;}
 
- public string Wind Speedy {get;set;}
+ public string Sunset  {get;set;}
+
+ public string Wind_Speedy {get;set;}
+
+ public int Wind_Direction {get;set;} 
+ 
+ public int img_id {get;set;}
+
+ public int date {get;set;}
+
+ public int codition_cod {get;set;}
+  
+ public string moon_phase {get;set;}
+ 
+
+
 
 }
