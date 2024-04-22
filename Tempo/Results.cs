@@ -26,7 +26,7 @@ public class Results
 
  public int date {get;set;}
 
- public int codition_cod {get;set;}
+ public int time {get;set;}
   
  public string moon_phase {get;set;}
  

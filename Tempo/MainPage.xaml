@@ -1,7 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Tempo.MainPage">
+             x:Class="Tempo.MainPage"
+             Shell.NavBarIsVisible="false"                          >
+             
+    <Grid>
 
+    <Grid.RowDefinitions>
+    <RowDefinitions Heigth="100"/>
+    <RowDefinitions Heigth="*"/>
+    <RowDefinitions Heigth="*"/>
+    <RowDefinitions Heigth="*"/>
+    <RowDefinitions Heigth="*"/>
+    <RowDefinitions Heigth="*"/>
+    <RowDefinitions Heigth="100"/>
+    </Grid.RowDefinitions>
+    <Grid.columnDefinitions>
+    <ColumnDefinitions Width="*"/>
+    <ColumnDefinitions Width="*"/>
+    <ColumnDefinitions Width="*"/>
+    <ColumnDefinitions Width="*"/>
+    <ColumnDefinitions Width="*"/>
+    </Grid.ColumnDefinitions>
+      
+      <Label x:Name="LabelGrau"
+        Grid.Row="1"
+        Grid.Column="0"
+        Texcolor="Black"
+        FontSize="15"
+        FontFamily="Jai___.TTF"/>
+      
+      <Label x:Name="LabelCeu"
+        Grid.Row="5"
+        Grid.Column="2"
+        Texcolor="Black"
+        FontSize="15"
+        FontFamily="Jai___.TTF"/>
+      
 
-</ContentPage>
+</ContentPage> 
