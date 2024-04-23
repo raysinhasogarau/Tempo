@@ -13,7 +13,7 @@ public partial class MainPage : ContentPage
 
 	}
 
-    void TestaLayout	()
+    void TestaLayout()
 	{     
       resultado= new Results();
 		resultado.Temp=23;
@@ -25,16 +25,19 @@ public partial class MainPage : ContentPage
 		resultado.City="Apucarana";
 		resultado.img_id=28;
 		resultado.Humidity=90;
-		resultado.Wind_Speedy=
-		resultado.Wind_Direction=
-		resultado.Sunrise=
-		resultado.Sunset=
-		resultado.moon_phase=
+		resultado.Wind_Speedy="4.99 km/h";
+		resultado.Wind_Direction=40;
+		resultado.Sunrise="06:11 am";
+		resultado.Sunset="06:39 pm";
+		resultado.moon_phase="cheia";
 		
 	}
 	
 	void preencherTela()
-    { 
+	{
 		
+	}
 }
+		
+
 

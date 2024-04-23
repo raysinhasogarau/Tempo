@@ -5,23 +5,23 @@
              Shell.NavBarIsVisible="false"                          >
              
     <Grid>
-
     <Grid.RowDefinitions>
-    <RowDefinitions Heigth="100"/>
-    <RowDefinitions Heigth="*"/>
-    <RowDefinitions Heigth="*"/>
-    <RowDefinitions Heigth="*"/>
-    <RowDefinitions Heigth="*"/>
-    <RowDefinitions Heigth="*"/>
-    <RowDefinitions Heigth="100"/>
+    <RowDefinition Height="100"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="100"/>
     </Grid.RowDefinitions>
-    <Grid.columnDefinitions>
-    <ColumnDefinitions Width="*"/>
-    <ColumnDefinitions Width="*"/>
-    <ColumnDefinitions Width="*"/>
-    <ColumnDefinitions Width="*"/>
-    <ColumnDefinitions Width="*"/>
+    <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
+   </Grid>
       
       <Label x:Name="LabelGrau"
         Grid.Row="1"
