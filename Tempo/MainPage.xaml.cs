@@ -1,7 +1,11 @@
 ﻿namespace Tempo;
 
 public partial class MainPage : ContentPage
-{	Results resultado;
+{	Results resultado; 
+    
+	Resposta resposta;
+
+    const string Url=""
     
 	int count = 0;
 	public MainPage()
@@ -37,6 +41,8 @@ public partial class MainPage : ContentPage
 	{
 		
 	}
+
+
 }
 		
 

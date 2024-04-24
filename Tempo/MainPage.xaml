@@ -26,16 +26,47 @@
       <Label x:Name="LabelGrau"
         Grid.Row="1"
         Grid.Column="0"
-        Texcolor="Black"
+        TextColor="#EBFABB"
         FontSize="15"
         FontFamily="Jai___.TTF"/>
       
       <Label x:Name="LabelCeu"
         Grid.Row="5"
         Grid.Column="2"
-        Texcolor="Black"
+        TextColor="Black"
         FontSize="15"
-        FontFamily="Jai___.TTF"/>
+        FontFamily="Jai___.TTF"/> 
+      
+      <Label Text="Direçao"
+            Grid.Row="3"
+            Grid.Column="2"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAI___.TTF"/>
+
+      <Label x:Name="LabelDirecao"
+            Grid.Row="3"
+            Grid.Column="5"
+            TextColor="#EBFABB"
+            FontSize="15"
+            FontFamily="JAI___.TTF"/>
+     
+          
+     <Label Text="Lua"
+            Grid.Row="4"
+            Grid.Column="2"
+            TextColor="#EBFABB"
+            FontSize="15"
+            FontFamily="JAI___.TTF"/>
+
+     <Label Text="Fase:"
+            Grid.Row="5"
+            Grid.Column="2"
+            TextColor="#EBFABB"
+            FontSize="15"
+            FontFamily="JAI___.TTF"/>
+
+
       
 
 </ContentPage> 
