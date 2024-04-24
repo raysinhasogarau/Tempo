@@ -5,7 +5,7 @@ public partial class MainPage : ContentPage
     
 	Resposta resposta;
 
-    const string Url=""
+    const string Url="https://api.hgbrasil.com/weather?=455927&key=d5a0f6cf"
     
 	int count = 0;
 	public MainPage()
@@ -38,10 +38,40 @@ public partial class MainPage : ContentPage
 	}
 	
 	void preencherTela()
-	{
+	{   
+		labelTemperature.Text=resultado.Temp;
+		labeldescricao.Text=resultado.Description;
 		
 	}
+	async void AtualizaTempo()
+	{ 
+	    try
+		{   
+			var httpClient=new HttpClient();
+			var response=await httpClient.GetAsync(Ur1);
+			if 
 
+
+
+
+
+
+
+
+
+
+
+		}
+		
+
+	  
+    
+
+
+
+
+
+	}
 
 }
 		
