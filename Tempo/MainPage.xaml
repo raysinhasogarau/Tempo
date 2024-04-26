@@ -4,26 +4,49 @@
              x:Class="Tempo.MainPage"
              Shell.NavBarIsVisible="false"                          >
              
-    <Grid>
-    <Grid.RowDefinitions>
-    <RowDefinition Height="100"/>
-    <RowDefinition Height="*"/>
-    <RowDefinition Height="*"/>
-    <RowDefinition Height="*"/>
-    <RowDefinition Height="*"/>
-    <RowDefinition Height="*"/>
-    <RowDefinition Height="100"/>
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-    <ColumnDefinition Width="*"/>
-    <ColumnDefinition Width="*"/>
-    <ColumnDefinition Width="*"/>
-    <ColumnDefinition Width="*"/>
-    <ColumnDefinition Width="*"/>
-    </Grid.ColumnDefinitions>
-   </Grid>
-      
-      <Label x:Name="LabelGrau"
+    <Grid> 
+        <Image x:Name="imgBackground"
+               Aspect="AspectFill"/>
+
+        <frame x:Name="graus"
+               Margin="10,90,10,460"
+               Opacity="0.5"
+               BackgroundColor="#e2dee3">
+               <Grid>
+               <Grid.RowDefinitions>
+                     <RowDefinition Height="*"/>
+                      <RowDefinition Height="*"/>
+               </Grid.RowDefinitions>
+
+               <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="*"/>
+                      <ColumnDefinition Width="*"/>
+              
+                </Grid.ColumnDefinitions>
+
+                <Label Text="24º"
+                       FontFamily="daddy"
+                       x:Name="LabelGraus"
+                       VerticalTextAilignmnt="Center"
+                       Grid.Column="0"
+                       FontSize="50"
+                       Grid.RowSpan="2'"/>
+                       
+
+
+
+
+
+
+
+
+
+        </Grid>     
+        </Frame>
+
+
+
+        <Label x:Name="LabelGrau"
         Grid.Row="1"
         Grid.Column="0"
         TextColor="#EBFABB"
@@ -64,9 +87,9 @@
             Grid.Column="2"
             TextColor="#EBFABB"
             FontSize="15"
-            FontFamily="JAI___.TTF"/>
+            FontFamily="JAI___.TTF"/> 
 
 
+   </Grid>
       
-
 </ContentPage> 

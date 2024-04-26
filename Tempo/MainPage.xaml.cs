@@ -5,7 +5,7 @@ public partial class MainPage : ContentPage
     
 	Resposta resposta;
 
-    const string Url="https://api.hgbrasil.com/weather?=455927&key=d5a0f6cf"
+    const string Url="https://api.hgbrasil.com/weather?=455927&key=d5a0f6cf";
     
 	int count = 0;
 	public MainPage()
@@ -48,20 +48,22 @@ public partial class MainPage : ContentPage
 	    try
 		{   
 			var httpClient=new HttpClient();
-			var response=await httpClient.GetAsync(Ur1);
-			if 
+			var response=await httpClient.GetAsync(Url);
+			if (response.IsSccessStatusCode)
+            {  
+				string content=response.Content.ReadAsStringAsync();
+                resposta = JsonSerialier.Deserialize<Resposta>(content);
 
+            }
 
-
-
-
-
-
-
-
+        } 
+		catch (Exception e) {
+              //Erro
 
 
 		}
+
+
 		
 
 	  
