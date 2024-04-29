@@ -31,7 +31,155 @@
                        Grid.Column="0"
                        FontSize="50"
                        Grid.RowSpan="2'"/>
+
+
+               <Label Text="Nublado"
+                       FontFamily="daddy"
+                       x:Name="Labelclima"
+                       Grid.Column="1"
+                       FontSize="18"
+                       Grid.Row="0"/>
+
+
+              <Label Text="Apucarana, PR"
+                       FontFamily="daddy"
+                       x:Name="LabelCidade"
+                       Grid.Column="1"
+                       FontSize="18"
+                       Grid.Row="1"/>
+
+              </Grid>
+              </frame>
+
+
+              <frame  x:Name="Chuva"
+                      Margin="10,250,185,362"
+                      Opacity="0.5"
+                      BackgroundColor="#e2dee3">
                        
+
+              <Grid>
+              <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+              
+              <Grid.RowDefinitions>
+
+
+              <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="58"/>
+              </Grid.ColumnDefinition>
+
+              <Label Text="Chuva:"
+                     Grid.Column="0"
+                     FontFamily="daddy"
+                     VerticalOptions="End"
+                     Grid.Row="0"/>
+              
+              <Label Text="Humidade:"
+                     Grid.Column="0"
+                     FontFamily="daddy"
+                     VerticalOptions="End"
+                     Grid.Row="1"/>
+
+              <Label Text="Nublado:"
+                     Grid.Column="0"
+                     FontFamily="daddy"
+                     VerticalOptions="End"
+                     Grid.Row="2"/>
+              
+              <Label Text="69"
+                     Grid.Column="1"
+                     FontFamily="daddy"
+                     x:Name="LabelHumidade"
+                     VerticalOptions="End"
+                     Grid.Row="1"/>
+
+              <Label Text="24"
+                     Grid.Column="1"
+                     FontFamily="daddy"
+                     x:Name="LabelChuva"
+                     VerticalOptions="End"
+                     Grid.Row="0"/>
+
+
+              <Label Text="24"
+                     Grid.Column="1"
+                     FontFamily="daddy"
+                     x:Name="LabelNublado"
+                     VerticalOptions="End"
+                     Grid.Row="2"/>
+
+              </Grid>
+              </Frame>
+
+              <Frame x:Name="Vento"
+                     Margin="185,250,10,362"
+                     Opacity="0.5"
+                     BackgroundColor="#e2dee3">
+                     <Grid>
+                     <Grid.RowDefinitions>
+                           <RowDefinition Height="*"/>
+                           <RowDefinition Height="*"/>
+                           <RowDefinition Height="*"/>
+                     </Grid.RowDefinitions>
+
+                     <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="*"/>
+                           <ColumnDefinition Width="58"/>
+                           <ColumnDefinition Width="*"/>
+                     </Grid.ColumnDefinitions>
+                     
+                     <Label Text="Vento"
+                            Grid.ColumnSpan="3"
+                            FontFamily="daddy"
+                            HorizontalTextaligment="Center"
+                            Grid.Row="0"/>
+                     
+                      <Label Text="Força:"
+                            Grid.Column="1"
+                            FontFamily="daddy"
+                            Grid.Row="1"/>
+
+                     <Label Text="Direçao:"
+                            Grid.Column="0"
+                            FontFamily="daddy"
+                            Grid.Row="2"/>
+
+                      <Label Text="69"
+                            Grid.Column="1"
+                            FontFamily="daddy"
+                            x:Name="LabelForça"
+                            Grid.Row="1"/>
+
+                     <Label Text="24"
+                            Grid.Column="1"
+                            FontFamily="daddy"
+                            x:Name="LabelDireçao"
+                            Grid.Row="2"/>
+
+                     <Label Text="S"
+                            Grid.Column="2"
+                            FontFamily="daddy"
+                            x:Name="LabelCardinal"
+                            Grid.Row="2"/>
+
+                     </Grid>
+                     </Frame>
+
+                     
+
+                     
+
+                     
+                     
+                     
+                     
+
+
+
 
 
 
