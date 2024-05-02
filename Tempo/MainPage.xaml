@@ -52,7 +52,7 @@
               </frame>
 
 
-              <frame  x:Name="Chuva"
+              <Frame  x:Name="Chuva"
                       Margin="10,250,185,362"
                       Opacity="0.5"
                       BackgroundColor="#e2dee3">
@@ -64,13 +64,13 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
               
-              <Grid.RowDefinitions>
+              </Grid.RowDefinitions>
 
 
               <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="58"/>
-              </Grid.ColumnDefinition>
+              </Grid.ColumnDefinitions>
 
               <Label Text="Chuva:"
                      Grid.Column="0"
@@ -168,6 +168,27 @@
 
                      </Grid>
                      </Frame>
+
+                    <Frame x:Name="sol"
+                           Margin="10,345,185,272"
+                           Opacity="0.5"
+                           BackgroundColor="#e2dee3">
+                     
+                     <Grid>
+                     <Grid.RowDefinitions>
+                           <RowDefinition Height="*"/>
+                           <RowDefinition Height="*"/>
+                           <RowDefinition Height="*"/>
+
+                     </Grid.RowDefinitions>
+                     
+                     <Grid.ColumnDefinitions>
+                          <ColumnDefinition Width="*"/>
+                          <ColumnDefinition Width="58"/>
+
+                     </Grid.ColumnDefinitions>
+
+
 
                      
 

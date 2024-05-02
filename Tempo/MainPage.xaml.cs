@@ -39,9 +39,10 @@ public partial class MainPage : ContentPage
 	
 	void preencherTela()
 	{   
-		labelTemperature.Text=resultado.Temp;
+		LabelGraus.Text=resultado.Temp;
 		labeldescricao.Text=resultado.Description;
-		
+		labelHumidity.Text=resultado.ToString;
+		labelSunrise.Text=resultado.ToString;
 	}
 	async void AtualizaTempo()
 	{ 
