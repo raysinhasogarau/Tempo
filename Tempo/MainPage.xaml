@@ -8,7 +8,7 @@
         <Image x:Name="imgBackground"
                Aspect="AspectFill"/>
 
-        <frame x:Name="graus"
+        <Frame x:Name="Graus"
                Margin="10,90,10,460"
                Opacity="0.5"
                BackgroundColor="#e2dee3">
@@ -27,10 +27,10 @@
                 <Label Text="24º"
                        FontFamily="daddy"
                        x:Name="LabelGraus"
-                       VerticalTextAilignmnt="Center"
+                       VerticalTextAlignment="Center"
                        Grid.Column="0"
                        FontSize="50"
-                       Grid.RowSpan="2'"/>
+                       Grid.RowSpan="2"/>
 
 
                <Label Text="Nublado"
@@ -49,7 +49,7 @@
                        Grid.Row="1"/>
 
               </Grid>
-              </frame>
+              </Frame>
 
 
               <Frame  x:Name="Chuva"
@@ -93,7 +93,7 @@
               <Label Text="69"
                      Grid.Column="1"
                      FontFamily="daddy"
-                     x:Name="LabelHumidade"
+                     x:Name="LabelUmidade"
                      VerticalOptions="End"
                      Grid.Row="1"/>
 
@@ -135,7 +135,7 @@
                      <Label Text="Vento"
                             Grid.ColumnSpan="3"
                             FontFamily="daddy"
-                            HorizontalTextaligment="Center"
+                            HorizontalTextAlignment="Center"
                             Grid.Row="0"/>
                      
                       <Label Text="Força:"
@@ -166,6 +166,13 @@
                             x:Name="LabelCardinal"
                             Grid.Row="2"/>
 
+                     <Label x:Name="Labeldescricao"
+                            Grid.Column="2"
+                            FontFamily="daddy"
+
+                            Grid.Row="2"/>
+                            
+
                      </Grid>
                      </Frame>
 
@@ -187,6 +194,8 @@
                           <ColumnDefinition Width="58"/>
 
                      </Grid.ColumnDefinitions>
+                       
+                           
 
 
 

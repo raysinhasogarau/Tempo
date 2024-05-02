@@ -1,4 +1,5 @@
-﻿namespace Tempo;
+﻿using System.Text.Json;
+namespace Tempo;
 
 public partial class MainPage : ContentPage
 {	Results resultado; 
@@ -39,41 +40,31 @@ public partial class MainPage : ContentPage
 	
 	void preencherTela()
 	{   
-		LabelGraus.Text=resultado.Temp;
-		labeldescricao.Text=resultado.Description;
-		labelHumidity.Text=resultado.ToString;
-		labelSunrise.Text=resultado.ToString;
+		LabelGraus.Text=resultado.Temp.ToString();
+		Labeldescricao.Text=resultado.Description;
+		LabelUmidade.Text=resultado.Humidity.ToString();
+		LabelSunrise.Text=resultado.Sunrise;
+		LabelSunset.Tex=resultado.Sunset;
+		LabelGraus.Text=resultado.Graus;
 	}
 	async void AtualizaTempo()
 	{ 
 	    try
 		{   
-			var httpClient=new HttpClient();
-			var response=await httpClient.GetAsync(Url);
-			if (response.IsSccessStatusCode)
+			var navegador=new HttpClient();
+			var response=await navegador.GetAsync(Url);
+			if (response.IsSuccessStatusCode)
             {  
-				string content=response.Content.ReadAsStringAsync();
-                resposta = JsonSerialier.Deserialize<Resposta>(content);
-
+				var content= await response.Content.ReadAsStringAsync();
+                resposta = JsonSerializer.Deserialize<Resposta>(content);
             }
 
+			preencherTela();
         } 
-		catch (Exception e) {
+		catch (Exception e) 
+		{
               //Erro
-
-
 		}
-
-
-		
-
-	  
-    
-
-
-
-
-
 	}
 
 }
